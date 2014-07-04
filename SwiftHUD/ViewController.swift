@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showHUDClicked(sender : AnyObject) {
+        
+        SwiftHUDView.alert(self.view,text:"Loading..." )
+
+    }
+    
+    
+    @IBAction func hideHUUClicked(sender : AnyObject) {
+        SwiftHUDView.close(self.view)
+    }
 
 }
 
